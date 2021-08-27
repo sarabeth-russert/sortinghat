@@ -38,29 +38,43 @@ function Student(name, house) {
 Student.allStudents = [];
 
 Student.prototype.renderHouse = function() {
-  const sectionElem = document.getElementById('home');
+  const imageDivElem = document.getElementById('picture-box');
+  const contentDivElem = document.getElementById('card-content');
   const houseImgElem = document.createElement('img');
   houseImgElem.src = this.houseImg;
   houseImgElem.id = 'house-img';
-  sectionElem.appendChild(houseImgElem);
+  imageDivElem.appendChild(houseImgElem);
   const h2Elem = document.createElement('h2');
   h2Elem.textContent = this.house;
-  sectionElem.appendChild(h2Elem);
+  contentDivElem.appendChild(h2Elem);
   const pElem = document.createElement('p');
   pElem.textContent = this.message;
-  sectionElem.appendChild(pElem);
+  contentDivElem.appendChild(pElem);
   const aElem = document.createElement('a');
   aElem.setAttribute('href', './houses.html');
   aElem.textContent = 'click to join your house!';
-  sectionElem.appendChild(aElem);
+  contentDivElem.appendChild(aElem);
 }
 
-
-Student.allStudents.push(new Student('sara', ravenclaw));
-Student.allStudents.push(new Student('hexx', slytherin));
-Student.allStudents.push(new Student('lydia', hufflepuff));
-Student.allStudents.push(new Student('chance', hufflepuff));
 function instantiateStudents() {
-
+  Student.allStudents.push(new Student('cameron', ravenclaw));
+  Student.allStudents.push(new Student('katy', ravenclaw));
+  Student.allStudents.push(new Student('jacob', ravenclaw));
+  Student.allStudents.push(new Student('brian', ravenclaw));
+  Student.allStudents.push(new Student('bryce', hufflepuff));
+  Student.allStudents.push(new Student('david', hufflepuff));
+  Student.allStudents.push(new Student('joe', hufflepuff));
+  Student.allStudents.push(new Student('angela', hufflepuff));
+  Student.allStudents.push(new Student('jonathan', slytherin));
+  Student.allStudents.push(new Student('valton', slytherin));
+  Student.allStudents.push(new Student('dario', slytherin));
+  Student.allStudents.push(new Student('steve', slytherin));
+  Student.allStudents.push(new Student('zack', gryffindor));
+  Student.allStudents.push(new Student('andrea', gryffindor));
+  Student.allStudents.push(new Student('anthony', gryffindor));
+  Student.allStudents.push(new Student('roop', gryffindor));
+  Student.allStudents.push(new Student('george', gryffindor));
 }
+
+instantiateStudents();
 
