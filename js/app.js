@@ -10,8 +10,10 @@ const getStudent = (name) => {
 
 
 const hideElements = () => {
-  const sortingHatElem = document.getElementById('home');
-  sortingHatElem.textContent = '';
+  const imageDivElem = document.getElementById('picture-box');
+  imageDivElem.textContent = '';
+  const contentDivElem = document.getElementById('card-content');
+  contentDivElem.textContent = '';
 }
 
 formElem.addEventListener('submit', (e) => {
