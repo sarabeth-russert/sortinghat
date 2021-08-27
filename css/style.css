@@ -6,6 +6,10 @@
   opacity: 50%;
 }
 
+p {
+  line-height: 1.5em;
+}
+
 header {
   width: 8%;
   position: absolute;
@@ -47,8 +51,8 @@ main {
   margin-top: 20px;
   background-color: #fff;
   border-radius: 50%;
-  width: 60%;
-  border: 3px solid black;
+  width: 50%;
+  /* border: 3px solid black; */
 }
 
 #home #picture-box img {
@@ -59,12 +63,11 @@ main {
 }
 
 #home #card-content {
-  padding: 5px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  border: 1px solid grey;
   border-radius: 4px;
   margin-top: 20px;
 }
@@ -78,8 +81,8 @@ main {
 
 #home legend {
   font-size: 20px;
-  margin-left: 2.5%;
-  font-family: 'Times New Roman', Times, serif;
+  /* margin-left: 2.5%; */
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5px;
 }
 
@@ -88,28 +91,22 @@ main {
   padding: 5px;
   /* border: 1px solid grey; */
   border-radius: 4px;
-  margin-bottom: 10px;
   box-sizing: border-box;
 }
 
 #home input {
-  width: 95%;
-  margin-left: 2.5%;
+  width: 98%;
+  /* margin-left: 2.5%; */
   height: 30px;
   margin-bottom: 5px;
 }
 
 #home p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 20px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-}
-
-#home p:nth-child(1) {
-  border-top: 2px solid white;
-  border-radius: 3px;
-  padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 button {
@@ -117,9 +114,9 @@ button {
   background: #000;
   color: #fff;
   padding: 4px 12px;
-  font-size: 20px;
+  font-size: 18px;
   transition: 350ms all;
-  margin-left: 2.5%;
+  /* margin-left: 2.5%; */
   border-radius: 4px;
 }
 
@@ -148,7 +145,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 65%;
+  width: 80%;
 }
 
 #house-article {
@@ -156,7 +153,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   margin-top: 25px;
-  border: 2px solid grey;
   border-radius: 4px;
   background-color: #fff;
   padding: 15px;
@@ -176,7 +172,7 @@ a:hover {
 }
 
 #house-article ul {
-  margin-top: 10px;
+  margin-top: 20px;
   /* list-style: circle inside; */
   display: flex;
   flex-wrap: wrap;
